@@ -2,11 +2,18 @@
 /* shared style */
 *{
     font-family: 'Work Sans', sans-serif;
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
 }
 .btn-primary{
-    
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    cursor: pointer
 }
 /* header style */
 header{
@@ -43,7 +50,7 @@ nav li a{
     margin-top: 100px;
 }
 .banner-content{
-    width: 850px;
+    /* width: 850px; */
     text-align: center;
     margin: 0 auto;
 }
@@ -56,5 +63,36 @@ nav li a{
     color:  #727272;
     font-size: 1rem;
     font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner img{
+    width: 100%;
+    margin-top: 20px;
 }
 
+/* reponse style */
+/* small device */
+
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav ul{
+        margin-top: 20px;
+    }
+    .banner-content{
+        width: auto;
+    }
+ 
+}
+/* medium device or tablet */
+@media screen and (min-width:577px) and (max-width:997px) {
+    header{
+        padding: 20px;
+    }
+
+}
